@@ -4,10 +4,10 @@ package main
 import "fmt"
 
 func main() {
-	//Create variables and channels
+	//Create channels
 	location := make(chan string, 3)
 	duration := make(chan string, 3)
-	size := make(chan int64, 3)
+	size := make(chan int, 3)
 	vesselName := make(chan string, 3)
 
 	//Input data into channels

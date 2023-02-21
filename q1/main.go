@@ -2,11 +2,12 @@ package main
 
 import "fmt"
 
-// Interface
+// Create Interface
 type Deploy interface {
+	//Create method signatures
 	location() string
 	duration() string
-	size() float64
+	size() int
 	vessel() string
 }
 
@@ -14,7 +15,7 @@ type Deploy interface {
 type Info struct {
 	area       string
 	time       string
-	teamSize   float64
+	teamSize   int
 	vesselName string
 }
 
@@ -29,7 +30,7 @@ func (i Info) duration() string {
 }
 
 // Implement size()
-func (i Info) size() float64 {
+func (i Info) size() int {
 	return i.teamSize
 }
 
